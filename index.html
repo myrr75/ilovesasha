@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок -->
+        <header class="header">
+            <h1 class="title">
+                <span class="heart">💕</span>
+                С Днем Рождения, любимый!
+                <span class="heart">💕</span>
+            </h1>
+            <p class="subtitle">Наши самые дорогие моменты</p>
+        </header>
+
+        <!-- Лента фотографий -->
+        <section class="photo-gallery">
+            <h2 class="section-title">
+                <i class="fas fa-camera"></i>
+                Наши воспоминания
+            </h2>
+            <div class="photo-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="photos/photo1.jpg" alt="Наше фото 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="slide">
+                        <img src="photos/photo2.jpg" alt="Наше фото 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="slide">
+                        <img src="photos/photo3.jpg" alt="Наше фото 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="slide">
+                        <img src="photos/photo4.jpg" alt="Наше фото 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="slide">
+                        <img src="photos/photo5.jpg" alt="Наше фото 5" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="slide">
+                        <img src="photos/photo6.jpg" alt="Наше фото 6" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                </div>
+                
+                <!-- Кнопки навигации -->
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Индикаторы -->
+                <div class="slider-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Плейлист с голосовыми сообщениями -->
+        <section class="playlist-section">
+            <h2 class="section-title">
+                <i class="fas fa-music"></i>
+                Твой плейлист созданный мной
+            </h2>
+            <div class="playlist-container">
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="audio-details">
+                            <h3>Люблю тебя</h3>
+                            <p>Просто очень миленькая песня которую мне захотелось посвятить тебе </p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="audio/люблю-тебя_.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудио элемент.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="audio-details">
+                            <h3>Хорошо с тобой</h3>
+                            <p>Этот трек я написала от всей души про нас с тобой) </p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="audio/хорошо с тобой.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудио элемент.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="audio-details">
+                            <h3>Минус на минус</h3>
+                            <p>Не знаю почему, но этот трек всегда во мне отзывался, и мне кажется, он напоминает нас</p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="audio/минус-на-минус.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудио элемент.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="audio-details">
+                            <h3>Кустурица</h3>
+                            <p>Петь сама не смогла, но это наш вайб</p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="audio/Bratya_Grim_-_Kusturica_47951687.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудио элемент.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- Поздравление -->
+        <section class="message-section">
+            <div class="message-card">
+                <h2 class="message-title">
+                    <i class="fas fa-heart"></i>
+                    Мое поздравление
+                </h2>
+                <p class="message-text">
+                    Мой любимый котенок, с днем рождения! 🎂<br>
+                    Я тебя очень сильно люблю, и знаю что мы со справимся.<br>
+                    Спасибо за то, что ты есть, я счастлива с тобой 💖
+                </p>
+                <div class="floating-hearts">
+                    <span class="heart-float">💕</span>
+                    <span class="heart-float">💖</span>
+                    <span class="heart-float">💝</span>
+                    <span class="heart-float">💕</span>
+                    <span class="heart-float">💖</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Котик -->
+        <section class="cat-section">
+            <h2 class="section-title">
+                <i class="fas fa-cat"></i>
+                Это ты!
+            </h2>
+            <div class="cat-container">
+                <div class="cat-card">
+                    <div class="cat-image-container">
+                        <img src="photos/cats.png" alt="Милый котик" class="cat-image" id="catImage">
+                    </div>
+                    <p class="cat-description">Нажми на котика! 🐱</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Всплывающий текст котика (вне контейнера) -->
+    <div class="cat-popup" id="catPopup">
+        <p>Да, это я тебя нарисовала, че пальцем в него тыкаешь! 😸</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
